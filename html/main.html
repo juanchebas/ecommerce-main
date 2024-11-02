@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Geek</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/animaciones.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="shortcut icon" href="../icons/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Jersey+10&family=Lilita+One&family=Pixelify+Sans:wght@400..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <!--ENCABEZADO-->
+    <div class="container_header">
+        <header class="header">
+            <img src="../icons/rick&morty.png" alt="icono" class="icon-game-1">
+            <h2 class="title-header">e-commerce</h2>
+            <img src="../icons/carrito-compras.png" alt="icono" class="icon-game-2">
+        </header>
+    </div>
+    
+
+    <main class="container"> <!--CONTENIDO GENERAL-->
+
+        
+
+        <section class="container_flecha_abajo">
+            <h2 class="title_one">MIS PRODUCTOS</h2>
+            <img src="/icons/flecha-hacia-abajo.png" alt="flecha hacia abajo" id="flecha">
+        </section>
+        
+
+        <section class="products"> <!--SECCION DE PRODUCTOS-->
+
+            <div class="container_products" data-card-product>
+                <ul class="cards" data-card> <!--CARD-->
+                    <li class="target_cards">
+                        <img src="../img/mackbook.webp" alt="MacBook M3" class="img_product">
+                        <p class="text_product">MacBook Air M3</p>
+                        <p class="price_product">$ 250 USD</p>
+                        <button class="material-symbols-outlined" data-id="${id}">delete</button>
+                    </li>
+                </ul><!-- FINAL DE LA CARD-->
+            </div>
+
+        </section> <!--FIN DE LA SECCION DE PRODUCTOS-->
+
+        <section .formulario_juan>
+        <!--SECCION PARA AGREGAR PRODUCTOS*-->
+        <h2 class="product_text product_text_a">AGREGAR PRODUCTO</h2>
+
+        <form class="form_add_product" data-formulario><!--INICIO DE FORMULARIO-->
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre.." data-nombre class="caja_input">
+            <br>
+            <input type="number" name="precio" id="precio" step="0.01" min="0.01" placeholder="Precio.." data-precio class="caja_input">
+            <br>
+            <input type="text" name="imagen" id="imagen" placeholder="URL de la imagen..." data-imagen class="caja_input">
+
+            <!--BOTONES-->
+            <div class="btn_products">
+                <input type="submit" value="ENVIAR" class="btn-submit">
+                <input type="submit" value="LIMPIAR" class="btn-clear">
+            </div>
+        </form> <!--FIN DEL FORMULARIO-->
+    </main> <!--FIN DEL CONTENIDO GENERAL-->
+    
+</section>
+
+    <footer class="footer">
+        <div class="footer_2">
+            <h3 class="text_footer">ALURA GEEK</h3>
+            <P class="footer_parraf">DESARROLLADO POR: JUAN TORRES</P>
+            <hr>
+        </div>
+    </footer>
+    <script src="../JS/mostrarProductos.js" type="module"></script>
+    <script src="../JS/crearProducto.js" type="module"></script>
+
+
+    <div class="final">
+
+    
+    <div class="enlaces"> 
+        <a href="https://www.flaticon.es/iconos-gratis/flecha-hacia-abajo" title="flecha hacia abajo iconos">Flecha hacia abajo iconos creados por Smashicons - Flaticon</a>
+        <br>
+        <a href="https://www.klipartz.com/es/sticker-png-fupbh">png Rick & Morty</a>
+    </div>
+    
+    <!--IMAGENES ANIMACION-->
+    <div class="footer_icons">
+        <a href="https://github.com/juanchebas?tab=repositories">
+            <img src="../icons/git-hub.png" alt="ico" class="ico-1">
+        </a>
+        <a href="https://www.linkedin.com/in/juan-sebastian-torres-rozo-864011225/">
+            <img src="../icons/linkedin.png" alt="ico" class="ico-2">
+        </a>
+
+        <img src="../icons/foto-prof-azul.png" alt="ico" class="ico-3">
+    </div>
+
+</div>
+
+</body>
+
+</html>

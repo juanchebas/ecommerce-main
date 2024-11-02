@@ -1,0 +1,331 @@
+:root{
+    --color-uno: #3d00f5;
+    --color-dos: #ffffff;
+    --color-tres: #db0210;
+    --color-cuatro: #9549d0;
+    --color-cinco: #1130f4;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: #006BFF;
+}
+
+.container_header {
+    display: flex;
+    justify-content: center;
+}
+
+.header{
+    gap: 50px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f27805;
+    /*impro*/
+    border-radius: 50px;
+    margin-top: 30px;
+    width: 70%;
+    text-align: center;
+}
+
+.title-header{
+    font-size: 100px;
+    font-weight: 900;
+    font-optical-sizing: auto;
+    font-family: "Jersey 10", sans-serif;
+}
+
+.title-header {
+    color: #006BFF;
+    animation: titulo 1s infinite;
+    text-shadow: 0 0 15px gold;
+}
+
+@keyframes titulo {
+    50% {
+        text-shadow: 0 0 15px #006BFF;
+        color: gold;
+    }
+}
+
+/*ANIMACIONES*/
+.header .icon-game-1{
+    top: 0;
+    left: 50%;
+    /* animation: flotar 10s ease-in-out infinite alternate;  */
+    /* border-radius: 100%; */
+    width: 80px;
+    height: 80px;
+}
+.header .icon-game-2{
+    top: 0;
+    left: 50%;
+    animation: flotar-dos 10s ease-in-out infinite alternate; 
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+}
+/*ESTILO TITLE*/
+.title_one{
+    font-size: 110px;
+    margin-right: 5%;
+    margin-top: 120px;
+    color: var(--color-dos);
+    font-family: "Jersey 10", sans-serif;
+}
+
+.container_flecha_abajo {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#flecha {
+    width: 120px;
+    height: 120px;
+    padding-top: 130px;
+    margin-right: 200px;
+}
+
+/*ESTILO DE PRODUCTOS*/
+.products{
+    width: 860px;
+    height: 840px;
+    display: flex;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-left: 10px;
+    overflow-y: scroll;
+    border-radius: 20px;
+    margin-bottom: 120px;
+    scroll-behavior: smooth;
+    /* border: 2px solid red; */
+}
+
+/*ESTILO DE CARDS*/
+.cards{
+    width: 90%;
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.target_cards{
+    width: 220px;
+    height: 300px;
+    margin-top: 5%;
+    margin-left: 3%;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: all 400ms;
+    background: #ffdc00;
+}
+.target_cards:hover{
+    cursor: pointer;
+    transition: all 400ms;
+    background: #ffdc00;
+    transform: translateY(-14px);
+    box-shadow: -11px 15px 1px 5px #000;
+}
+/*IMAGENES CARDS*/
+.img_product{
+    width: 140px;
+    height: 130px;
+    margin: 20px;
+    margin-top: 15px;
+    margin-left: 35px;
+}
+/*ESTILO Y FUENTES*/
+.text_product{
+    width: 200px;
+    color: #050deb;
+    font-size: 27px;
+    margin-left: 25px;
+    margin-top: -8px;
+    font-weight: 800;
+    font-family: "Pixelify Sans", sans-serif;
+}
+.price_product{
+    color: #1e1d1d;
+    font-size: 23px;
+    font-weight: 800;
+    margin-top: 18px;
+    margin-left: 25px;
+    font-family: "Pixelify Sans", sans-serif;
+}
+.material-symbols-outlined{
+    display: flex;
+    margin-top: -40px;
+    margin-left: 180px;
+    border: none;
+    background: #c0c0c0;
+    cursor: pointer;
+}
+
+/*ESTILO DE LA BARRA DE SCROLL*/
+::-webkit-scrollbar{
+    width: 5px;
+    height: -3px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--color-seis);
+    border-radius: 60px;
+    background: #a9db1b;
+}
+::-webkit-scrollbar-button{
+    width: 5px;
+    height: -3px;
+}
+/*SECCION PARA AGREGAR PRODUCTOS*/
+.product_text{
+    width: 34%;
+    display: flex;
+    font-size: 100px;
+    margin-left: 66%;
+    margin-top: -64%;
+    justify-content: end;
+    color: var(--color-dos);
+    font-family: "Jersey 10", sans-serif;
+}
+.form_add_product{
+    display: flex;
+    /* margin-top: 4%; */
+    margin-left: 65%;
+    flex-direction: column;
+}
+#nombre,
+#imagen,
+#precio{
+    width: 400px;
+    height: 60px;
+    border: none;
+    padding: 10px;
+    padding-left: 50px;
+    margin-top: 8%;
+    font-size: 24px;
+    letter-spacing: 3px;
+    color: var(--color-uno);
+    background: var(--color-uno);
+    border-bottom: 2px solid #fff;
+    font-family: "Jersey 10", sans-serif;
+}
+
+.caja_input {
+    border-radius: 50px;
+}
+
+input:focus{
+    outline: none;
+    font-size: 30px;
+}
+input::placeholder{
+    color: #fff;
+    font-size: 25px;
+    font-family: "Jersey 10", sans-serif;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button{
+    width: 90px;
+    height: 60px;
+    border: none;
+}
+.btn-submit{
+    width: 200px;
+    height: 60px;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    margin-top: 35px;
+    letter-spacing: 2px;
+    border-radius: 30px;
+    background: #F2CB05;
+    transition: all 500ms;
+    font-family: "Jersey 10", sans-serif;
+}
+.btn-clear{
+    width: 200px;
+    height: 60px;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    font-size: 30px;
+    border-radius: 30px;
+    letter-spacing: 2px;
+    background: #F2CB05;
+    transition: all 500ms;
+    font-family: "Jersey 10", sans-serif;
+}
+.btn-submit:hover{
+    color: #ffffff;
+    background-color: #db0210;
+    transition: all 500ms ease;
+}
+.btn-clear:hover{
+    color: #ffffff;
+    background-color: #db0210;
+    transition: all 500ms ease;
+}
+
+.msm-geek{
+    margin-right: 80px;
+    margin-top: 70px;
+}
+
+.footer{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-header);
+    margin-top: 20%;
+    margin-bottom: 20px;
+}
+.text_footer{
+    margin-top: -100px;
+    font-size: 60px;
+    color: #ffffff;
+    text-align: center;
+    font-family: "Jersey 10", sans-serif;
+}
+.footer_parraf{
+    font-size: 60px;
+    color: #ffffff;
+    text-align: center;
+    font-family: "Jersey 10", sans-serif;
+    margin-bottom: 45px;
+}
+
+.enlaces{
+    padding-left: 20px;
+}
+
+.footer_icons{
+    margin-left: 120px;
+    padding-right: 20px;
+}
+.ico-1,
+.ico-2,
+.ico-3{
+    margin-left: 20px;
+    margin-top: -40%;
+    width: 50px;
+    animation: ghost 2s linear infinite;
+}
+
+.ico-3{
+    border: 1px solid black;
+    border-radius: 100%;
+}
+
+.final{
+    height: 33px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -50px;
+    margin-bottom: 20px;
+}
