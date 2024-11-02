@@ -235,13 +235,19 @@ input[type="number"]::-webkit-outer-spin-button{
     height: 60px;
     border: none;
 }
+.btn_products{
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    padding-left: 10px;
+}
 .btn-submit{
     width: 200px;
     height: 60px;
     border: none;
     font-size: 30px;
     cursor: pointer;
-    margin-top: 35px;
     letter-spacing: 2px;
     border-radius: 30px;
     background: #F2CB05;
